@@ -1,53 +1,34 @@
 {
-	"_version": "1.12.0",
 	"sap.app": {
-		"id": "sap.ui.demo.walkthrough",
-		"type": "application",
-		"i18n": "i18n/i18n.properties",
-		"title": "{{appTitle}}",
-		"description": "{{appDescription}}",
+		"id": "sap.m.sample.SplitApp",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}
 	},
-	"sap.ui": {
-		"technology": "UI5",
-		"deviceTypes": {
-			"desktop": true,
-			"tablet": true,
-			"phone": true
-		}
-	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.demo.walkthrough.view.App",
+			"viewName": "sap.m.sample.SplitApp.V",
 			"type": "XML",
-			"async": true,
-			"id": "app"
+			"async": true
 		},
 		"dependencies": {
-			"minUI5Version": "1.60",
 			"libs": {
+				"sap.ui.core": {},
 				"sap.m": {}
 			}
 		},
 		"config": {
-			"invoiceLocal": "/Invoices.json"
-		},
-		"models": {
-			"i18n": {
-				"type": "sap.ui.model.resource.ResourceModel",
-				"settings": {
-					"bundleName": "sap.ui.demo.walkthrough.i18n.i18n"
-				}
+			"sample": {
+				"files": [
+					"V.view.xml",
+					"C.controller.js",
+					"manifest.json"
+				]
 			}
 		},
-		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
-		}
+	  "invoice": {
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "Invoices.json"
+	  }
 	}
 }
