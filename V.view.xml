@@ -11,88 +11,165 @@
 		<detailPages>
 			<Page
 				id="detail"
-				title="Detail 1"
 				backgroundDesign= "Solid"
 				class="sapUiStdPage">
+				<VBox
+							alignItems="Center">
+								<Image
+									src="images/video.png"
+									mode="{/imageMode}"
+									height="{/imageHeight}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									width="{/imageWidth}" >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Image>
+							<Text text="MSI GeForce RTX 2060 SUPER ARMOR OC" class="sapUiSmallMarginTop"/>
+						</VBox>
 			</Page>
 			<Page
 				id="detailDetail"
-				title="Detail 1 Page"
+				title="Процессор"
 				class="sapUiStdPage"
 				backgroundDesign= "Solid"
 				showNavButton="true"
 				navButtonText="Back"
 				navButtonPress=".onPressDetailBack">
 				<VBox class="sapUiSmallMargin">
-					<Label text="This is Detail Page2" />
-					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-				
+					<RadioButtonGroup columns="1" width="100px" class="sapUiMediumMarginBottom" select=".onPressModeBtn"> 
 					</RadioButtonGroup>
+					<VBox
+							alignItems="Center">
+								<Image
+									src="images/proc.png"
+									mode="{/imageMode}"
+									height="{/imageHeight}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									width="{/imageWidth}" >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Image>
+							<Text text="Intel Core i5-9600K" class="sapUiSmallMarginTop"/>
+						</VBox>
 				</VBox>
 			</Page>
 			<Page
 				id="detail2"
-				title="Detail 3 Page"
+				title="Материнская плата"
 				backgroundDesign= "Solid"
 				class="sapUiStdPage"
 				showNavButton="true"
 				navButtonText="Back"
 				navButtonPress=".onPressDetailBack">
 				<VBox class="sapUiSmallMargin">
-					<Label text="This is Detail Page3" />
 					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
 				
 					</RadioButtonGroup>
+					<Image
+									src="images/matplata.png"
+									mode="{/imageMode}"
+									height="{/imageHeight}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									width="{/imageWidth}" >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Image>
+								<Text text="ASRock Z390 Extreme4" class="sapUiSmallMarginTop"/>
 				</VBox>
 		
 			</Page>
 			
 			<Page
 				id="detail3"
-				title="Detail 3 Page"
+				title="Жесткий диск HDD"
 				backgroundDesign= "Solid"
 				class="sapUiStdPage"
 				showNavButton="true"
 				navButtonText="Back"
 				navButtonPress=".onPressDetailBack">
 				<VBox class="sapUiSmallMargin">
-					<Label text="This is Detail Page4" />
 					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-				
 					</RadioButtonGroup>
+					<VBox
+							alignItems="Center">
+								<Image
+									src="images/hdd.png"
+									mode="{/imageMode}"
+									height="{/imageHeight}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									width="{/imageWidth}" >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Image>
+							<Text text="SEAGATE Barracuda ST2000DM008" class="sapUiSmallMarginTop"/>
+						</VBox>
 				</VBox>
 		
 			</Page>
 			
 			<Page
 				id="detail4"
-				title="Detail 4 Page"
+				title="Твердотельный накопитель SSD"
 				backgroundDesign= "Solid"
 				class="sapUiStdPage"
 				showNavButton="true"
 				navButtonText="Back"
 				navButtonPress=".onPressDetailBack">
 				<VBox class="sapUiSmallMargin">
-					<Label text="This is Detail Page5" />
 					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-				
 					</RadioButtonGroup>
+					<VBox
+							alignItems="Center">
+								<Image
+									src="images/ssd.png"
+									mode="{/imageMode}"
+									height="{/imageHeight}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									width="{/imageWidth}" >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Image>
+							<Text text="SSD Samsung 860 EVO MZ-76E500BW" class="sapUiSmallMarginTop"/>
+						</VBox>
 				</VBox>
 		
 			</Page>
 			<Page
 				id="detail5"
-				title="Detail 5 Page"
+				title="Оперативная память"
 				backgroundDesign= "Solid"
 				class="sapUiStdPage"
 				showNavButton="true"
 				navButtonText="Back"
 				navButtonPress=".onPressDetailBack">
 				<VBox class="sapUiSmallMargin">
-					<Label text="This is Detail Page6" />
 					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-				
 					</RadioButtonGroup>
+					<VBox
+							alignItems="Center">
+								<Image
+									src="images/oper.png"
+									mode="{/imageMode}"
+									height="{/imageHeight}"
+									backgroundSize="5em 5em"
+									backgroundPosition="center"
+									width="{/imageWidth}" >
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Image>
+							<Text text="Crucial Ballistix Sport LT DDR4 1x16Gb" class="sapUiSmallMarginTop"/>
+						</VBox>
 				</VBox>
 		
 			</Page>
