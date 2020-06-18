@@ -5,18 +5,21 @@
 			city: "Belmont",
 			state: "NH",
 			county: "Belknap",
-			revenue : 123214125.34  
+			revenue : 123214125.34,
+			photo : images/video.png
 		},{
 			name : "Beam Hdg.",
 			city: "Hancock",
 			state: "NH",
 			county: "Belknap"
-			revenue : 3235235235.23  
+			revenue : 3235235235.23, 
+            photo : images/proc.png			
 		},{
 			name : "Carot Ltd.",
 			city: "Cheshire",
 			state: "NH",
 			county: "Sullivan",
-			revenue : "Not Disclosed"  
+			revenue : "Not Disclosed" ,
+             photo : images/matplata.png			
 		}]
 }

@@ -1,17 +1,8 @@
 <mvc:View
-	controllerName="sap.ui.demo.walkthrough.controller.App"
+	controllerName="sap.ui.sample.App"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true">
-	<Shell>
-		<App class="myAppDemoWT">
-			<pages>
-				<Page title="{i18n>homePageTitle}">
-				</Page>
-			</pages>
-		</App>
-	</Shell>
-	<List id=”companyList” items="{/companies}">
+	xmlns:mvc="sap.ui.core.mvc">
+	<List id=”companyList” items="{/card}">
 		<items>
 			<StandardListItem
 				title="{name}"
