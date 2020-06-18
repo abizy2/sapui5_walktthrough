@@ -11,4 +11,12 @@
 			</pages>
 		</App>
 	</Shell>
+	<List id=”companyList” items="{/companies}">
+		<items>
+			<StandardListItem
+				title="{name}"
+				description="{city}"
+			/>
+		</items>
+	</List>
 </mvc:View>
