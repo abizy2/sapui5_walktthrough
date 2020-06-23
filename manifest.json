@@ -7,7 +7,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.m.sample.SplitApp.V",
+			"viewName": "sap.m.sample.SplitApp.menu",
 			"type": "XML",
 			"async": true
 		},
@@ -20,7 +20,7 @@
 		"config": {
 			"sample": {
 				"files": [
-					"V.view.xml",
+					"menu.view.xml",
 					"C.controller.js",
 					"manifest.json"
 				]

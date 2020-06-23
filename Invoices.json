@@ -1,0 +1,52 @@
+{
+  "Invoices": [
+	{
+	  "ProductName": "Graphics Cards",
+	  "Quantity": 30,
+	  "ExtendedPrice": 25999,
+	  "ShipperName": "Fun Inc.",
+	  "ShippedDate": "fdsdffdsdsf",
+	  "Photo": "images/video.png"
+	},
+	{
+	  "ProductName": "Mother Plate",
+	  "Quantity": 47,
+	  "ExtendedPrice": 6999,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2019-11-18T00:00:00",
+	  "Photo": "images/matplata.png"
+	},
+	{
+	  "ProductName": "Processor",
+	  "Quantity": 15,
+	  "ExtendedPrice": 15999,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2019-11-18T00:00:00",
+	  "Photo": "images/proc.png"
+	},
+	{
+	  "ProductName": "Operative Memory",
+	  "Quantity": 29,
+	  "ExtendedPrice": 4599,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2019-11-19T00:00:00",
+	  "Photo": "images/oper.png"
+	},
+	{
+	  "ProductName": "SSD",
+	  "Quantity": 35,
+	  "ExtendedPrice": 5999,
+	  "ShipperName": "ACME",
+	  "ShippedDate": "2019-11-21T00:00:00",
+	  "Photo": "images/ssd.png"
+	},
+	{
+	  "ProductName": "HDD",
+	  "Quantity": 100,
+	  "ExtendedPrice": 3999,
+	  "ShipperName": "Fun Inc.",
+	  "ShippedDate": "2019-11-20T00:00:00",
+	  "Photo": "images/hdd.png"
+	}
+	]
+}
