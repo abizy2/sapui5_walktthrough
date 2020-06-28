@@ -7,7 +7,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.m.sample.SplitApp.menu",
+			"viewName": "sap.m.sample.SplitApp.view.menu",
 			"type": "XML",
 			"async": true
 		},
