@@ -57,6 +57,5 @@ sap.ui.define([
 			}
 			return result;
 		}
-
 	});
 });
