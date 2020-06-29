@@ -40,7 +40,6 @@
 												<Text text="{invoice>ShippedDate}"></Text>
 												<Image src="{invoice>Photo}" width="80px" height="90px"/>
 											</cells>
-											
 										</ColumnListItem>
 								</items>
 							</Table>

@@ -1,127 +1,23 @@
 <mvc:View
-	controllerName="sap.m.sample.SplitApp.controller.menu"
+	controllerName="SplitApp.controller.menu"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
-	<SplitApp
-		id="SplitAppDemo"
-		initialDetail="detail"
-		initialMaster="master"
-		orientationChange=".onOrientationChange">
-		<detailPages>
-			<Page
-				id="detail"
-				backgroundDesign= "Solid"
-				class="sapUiStdPage">
-	
-			</Page>
-			<Page
-				id="detailDetail"
-				title="Процессор"
-				class="sapUiStdPage"
-				backgroundDesign= "Solid"
-				showNavButton="true"
-				navButtonText="Back"
-				navButtonPress=".onPressDetailBack">
-				<VBox class="sapUiSmallMargin">
-					<RadioButtonGroup columns="1" width="100px" class="sapUiMediumMarginBottom" select=".onPressModeBtn"> 
-					</RadioButtonGroup>
-				</VBox>
-			</Page>
-			<Page
-				id="detail2"
-				title="Материнская плата"
-				backgroundDesign= "Solid"
-				class="sapUiStdPage"
-				showNavButton="true"
-				navButtonText="Back"
-				navButtonPress=".onPressDetailBack">
-				<VBox class="sapUiSmallMargin">
-					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-				
-					</RadioButtonGroup>
-	
-				</VBox>
-		
-			</Page>
-			
-			<Page
-				id="detail3"
-				title="Жесткий диск HDD"
-				backgroundDesign= "Solid"
-				class="sapUiStdPage"
-				showNavButton="true"
-				navButtonText="Back"
-				navButtonPress=".onPressDetailBack">
-				<VBox class="sapUiSmallMargin">
-					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-					</RadioButtonGroup>
-
-				</VBox>
-		
-			</Page>
-			
-			<Page
-				id="detail4"
-				title="Твердотельный накопитель SSD"
-				backgroundDesign= "Solid"
-				class="sapUiStdPage"
-				showNavButton="true"
-				navButtonText="Back"
-				navButtonPress=".onPressDetailBack">
-				<VBox class="sapUiSmallMargin">
-					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-					</RadioButtonGroup>
-				
-				</VBox>
-		
-			</Page>
-			<Page
-				id="detail5"
-				title="Оперативная память"
-				backgroundDesign= "Solid"
-				class="sapUiStdPage"
-				showNavButton="true"
-				navButtonText="Back"
-				navButtonPress=".onPressDetailBack">
-				<VBox class="sapUiSmallMargin">
-					<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
-					</RadioButtonGroup>
-			
-				</VBox>
-		
-			</Page>
-		</detailPages>
-		<masterPages>
-			<Page
-				id="master"
-				title="Сборка компьютера"
-				backgroundDesign= "List"
-				icon="sap-icon://action"
-				class="sapUiStdPage">
-				<List>
-					<StandardListItem title="Комплектующие" type="Navigation" press=".onPressGoToMaster" />
-				</List>
-			</Page>
-			<Page
-				id="master2"
-				title="Комплектующие"
-				backgroundDesign= "List"
-				icon="sap-icon://action"
-				class="sapUiStdPage"
-				showNavButton="true"
-				navButtonPress=".onPressMasterBack">
-				<List itemPress=".onListItemPress">
-					<items>
-						<StandardListItem title="Видеокарта" type="Active" custom:to="detail" />
-						<StandardListItem title="Процессор" type="Active" custom:to="detailDetail" />
-						<StandardListItem title="Материнская плата" type="Active" custom:to="detail2" />
-						<StandardListItem title="Жесткии диски HDD" type="Active" custom:to="detail3" />
-						<StandardListItem title="SSD-диски" type="Active" custom:to="detail4" />
-						<StandardListItem title="Оперативная память" type="Active" custom:to="detail5" />
-					</items>
-				</List>
-			</Page>
-		</masterPages>
-	</SplitApp>
+	height="100%"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">			
+		<Page
+			id="master2"
+			title="Комплектующие"
+			backgroundDesign= "List"
+			icon="sap-icon://action"
+			class="sapUiStdPage"
+			showNavButton="true"
+			navButtonPress=".onPressMasterBack">
+			<List 
+			itemPress=".onListItemPress"
+			items="{invoice>/Invoices}">
+				<items>
+					<StandardListItem title="{invoice>ProductName}" type="Active" />
+				</items>
+			</List>
+		</Page>	
 </mvc:View>

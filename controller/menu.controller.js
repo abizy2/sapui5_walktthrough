@@ -5,7 +5,7 @@ sap.ui.define([
 ], function (MessageToast, Controller, Log) {
 	"use strict";
 
-	return Controller.extend("sap.m.sample.SplitApp.menu", {
+	return Controller.extend("SplitApp.controller.menu", {
 
 		onInit: function () {
 			this.getSplitAppObj().setHomeIcon({

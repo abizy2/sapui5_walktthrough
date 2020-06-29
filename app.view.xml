@@ -1,13 +1,6 @@
 <mvc:View
-	controllerName="sap.ui.sample.App"
+	controllerName="SplitApp.controller.menu"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<List id=”companyList” items="{/card}">
-		<items>
-			<StandardListItem
-				title="{name}"
-				description="{city}"
-			/>
-		</items>
-	</List>
+	<SplitContainer id="splitApp" />
 </mvc:View>
