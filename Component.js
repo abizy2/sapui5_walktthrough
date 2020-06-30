@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (UIComponent) {
 	"use strict";
 
-	return UIComponent.extend("SplitApp.controller.menu", {
+	return UIComponent.extend("SplitApp.Component", {
 
 		metadata: {
 			manifest: "json"

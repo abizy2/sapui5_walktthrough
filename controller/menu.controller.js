@@ -7,13 +7,7 @@ sap.ui.define([
 
 	return Controller.extend("SplitApp.controller.menu", {
 
-		onInit: function () {
-			this.getSplitAppObj().setHomeIcon({
-				'phone': 'phone-icon.png',
-				'tablet': 'tablet-icon.png',
-				'icon': 'desktop.ico'
-			});
-		},
+		
 
 		onOrientationChange: function (oEvent) {
 			var bLandscapeOrientation = oEvent.getParameter("landscape"),
