@@ -55,7 +55,11 @@
 			"viewType": "XML",
 			"viewPath": "sap.m.sample.SplitApp.view.menu",
 			"controlId": "SplitApp",
-			"controlAggregation": "pages"
+			"controlAggregation": "pages",
+			"bypassed": {
+               "target": "notFound"
+            },
+			"async": true
 		  },
 			"routes": [
 				{
@@ -81,6 +85,11 @@
 					"controlId": "splitApp",
 					"controlAggregation": "menuController"
 				},
+				"notFound": {
+					   "viewId": "notFound",
+					   "viewName": "NotFound",
+					   "transition": "show"
+					},
 				"detail": {
 					"LinksList": {
 						"viewName": "LinksList",

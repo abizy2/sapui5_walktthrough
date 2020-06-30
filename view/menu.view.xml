@@ -12,6 +12,9 @@
 			class="sapUiStdPage"
 			showNavButton="true"
 			navButtonPress=".onPressMasterBack">
+			<content>
+					<Button text="{i18n>iWantToNavigate}" class="sapUiTinyMarginEnd"/>
+			</content>
 			<List 
 			itemPress=".onListItemPress"
 			items="{invoice>/Invoices}">
