@@ -56,9 +56,6 @@
 			"viewPath": "sap.m.sample.SplitApp.view.menu",
 			"controlId": "SplitApp",
 			"controlAggregation": "pages",
-			"bypassed": {
-               "target": "notFound"
-            },
 			"async": true
 		  },
 			"routes": [
@@ -66,21 +63,13 @@
 				  "pattern": "",
 				  "name": "Menu",
 				  "target": "menu"
-				},
-					],
-				"notFound": {
-					   "viewId": "notFound",
-					   "viewName": "NotFound",
-					   "transition": "show"
-					},
-				"detail": {
-					"LinksList": {
-						"viewName": "LinksList",
-						"parent": "splitApp",
-						"controlId": "splitApp",
-						"controlAggregation": "pageController"
+				}],
+				"targets": {
+					"menu": {
+					   "viewId": "menu",
+					   "viewName": "list"
 					}
-				}
+				 }
 			}
 		}
 	}
