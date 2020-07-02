@@ -62,29 +62,12 @@
 			"async": true
 		  },
 			"routes": [
-				{
-					"pattern": "detail/{component}",
-					"name": "detail",
-					"target": "detail"
+						{
+				  "pattern": "",
+				  "name": "Menu",
+				  "target": "menu"
 				},
-				{
-					"pattern": "Links",
-					"name": "LinksList",
-					"target": ["LinksList","linkMP"]
-				},
-				{
-					"pattern": "detail/{LinkToket}",
-					"name": "LinkShow",
-					"target": ["LinksList","LinkShow"]
-				}
-			],
-		  "targets": {
-				"LinksShow": {
-					"viewName": "LinksList",
-					"parent": "splitApp",
-					"controlId": "splitApp",
-					"controlAggregation": "menuController"
-				},
+					],
 				"notFound": {
 					   "viewId": "notFound",
 					   "viewName": "NotFound",
@@ -101,4 +84,3 @@
 			}
 		}
 	}
-}

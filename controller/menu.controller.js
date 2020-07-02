@@ -32,9 +32,12 @@ sap.ui.define([
 		},
 
 		onListItemPress: function (oEvent) {
-			var sToPageId = oEvent.getParameter("listItem").getCustomData()[0].getValue();
-
-			this.getSplitAppObj().toDetail(this.createId(sToPageId));
+			let oContext = oEvent.getParameter("listItem").getBindingContext('invoice').getObject();
+			let sProductName = oContext.ProductName;
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(that);
+									oRouter.navTo('detail', {
+			   component: sProductName
+			});
 		},
 
 		onPressModeBtn: function (oEvent) {
@@ -52,9 +55,9 @@ sap.ui.define([
 			return result;
 		},
 		
-		onListItem: function () {
-		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-      oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
-		}
+		//onListItem: function () {
+		//var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+		//oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
+		//}
 	});
 });

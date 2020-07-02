@@ -9,7 +9,7 @@ sap.ui.define([
 			this.getOwnerComponent().openHelloDialog();
 		}
 		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        oRouter.navTo('RouteName', {
+        oRouter.navTo('Graphics Cards', {
           RoteParam1: Value1
         });
 	});
