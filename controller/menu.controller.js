@@ -50,6 +50,11 @@ sap.ui.define([
 				Log.info("SplitApp object can't be found");
 			}
 			return result;
+		},
+		
+		onListItem: function () {
+		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+      oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
 		}
 	});
 });
