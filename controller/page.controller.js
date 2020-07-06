@@ -4,14 +4,15 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("SplitApp.controller.menu", {
+		},
+		onListItemPress: function (eVent) {
+		let oContext = oEvent.getParameter("listItem").getBindingContext('invoice').getObject();
+					let sProductName = oContext.ProductName;
 
-		onOpenDialog : function () {
-			this.getOwnerComponent().openHelloDialog();
-		}
-		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        oRouter.navTo('Graphics Cards', {
-          RoteParam1: Value1
-        });
-	});
+					var oRouter = sap.ui.core.UIComponent.getRouterFor(that);
+											oRouter.navTo('menu', {
+					   component: sProductName
+					});
+			},
 
 });

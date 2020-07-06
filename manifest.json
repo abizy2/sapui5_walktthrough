@@ -59,16 +59,27 @@
 			"async": true
 		  },
 			"routes": [
-						{
+				{
 				  "pattern": "",
-				  "name": "Menu",
+				  "name": "menu",
 				  "target": "menu"
-				}],
+				},
+				
+				{
+					"pattern": "page",
+					"name": "page",
+					"target": "page"
+				}
+				],
 				"targets": {
 					"menu": {
 					   "viewId": "menu",
-					   "viewName": "list"
-					}
+					   "viewName": "menu"
+					},
+					"page": {
+					  "viewId": "page",
+					  "viewName": "Page"
+						}
 				 }
 			}
 		}

@@ -31,14 +31,16 @@ sap.ui.define([
 			this.getSplitAppObj().toMaster(this.createId("master2"));
 		},
 
-		onListItemPress: function (oEvent) {
-			let oContext = oEvent.getParameter("listItem").getBindingContext('invoice').getObject();
-			let sProductName = oContext.ProductName;
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(that);
-									oRouter.navTo('detail', {
-			   component: sProductName
-			});
-		},
+	    onListItemPress: function (eVent) {
+		let oContext = oEvent.getParameter("listItem").getBindingContext('invoice').getObject();
+					let sProductName = oContext.ProductName;
+
+					var oRouter = sap.ui.core.UIComponent.getRouterFor(that);
+											oRouter.navTo('detail', {
+					   component: sProductName
+					});
+			},
+
 
 		onPressModeBtn: function (oEvent) {
 			var sSplitAppMode = oEvent.getSource().getSelectedButton().getCustomData()[0].getValue();

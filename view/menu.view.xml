@@ -16,7 +16,8 @@
 			itemPress="onListItemPress"
 			items="{invoice>/Invoices}">
 				<items>
-					<StandardListItem title="{invoice>ProductName}" type="Active" />
+					<StandardListItem title="{invoice>ProductName}" type="Active"
+						/>
 				</items>
 			</List>
 		</Page>	
