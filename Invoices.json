@@ -1,4 +1,27 @@
 {
+"types": [
+		{
+			"id": "Graphics Cards",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Graphics Cards"
+				}
+			},
+			"title": "Видеокарты"
+		},
+		{
+			"id": "Mother Plate",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Mother Plate"
+				}
+			},
+			"title": "Материнские платы"
+		}
+	],
+	
   "Invoices": [
 	{
 	  "ProductName": "Graphics Cards",

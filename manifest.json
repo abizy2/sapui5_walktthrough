@@ -65,6 +65,14 @@
 				  "target": "menu"
 				},
 				
+							{
+					  "pattern": "catalog/{category}",
+					  "name": "category",
+					  "target": [
+						"menu",
+						"category"
+					  ]
+					},
 				{
 					"pattern": "page",
 					"name": "page",
