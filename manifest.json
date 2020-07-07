@@ -72,7 +72,26 @@
 								"menu",
 								"page"
 							  ]
-				}
+				},
+				
+							{
+					  "pattern": "busket",
+					  "name": "busket",
+					  "target": [
+						"menu",
+						"busket"
+					  ]
+					},
+					
+							{
+					  "pattern": "about",
+					  "name": "about",
+					  "target": [
+						"menu",
+						"about"
+					  ]
+					}
+				
 				],
 				"targets": {
 					"menu": {

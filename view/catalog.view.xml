@@ -8,10 +8,10 @@
 		<!-- Тут выводится список товаров.ю надо поменять список на набор тайлов. Чтоб было как в настоящих магазинах -->
 		<List
 			id='catalogList'
-			items="{Invoices>/catalog}">
+			items="{invoice>/catalog}">
 			<StandardListItem
-				title="{Invoices>title}"
-				description="{Invoices>type}"
+				title="{invoice>title}"
+				description="{invoice>type}"
 				type='Active'
 				press="omCatalogItemPress"/>
 		</List>

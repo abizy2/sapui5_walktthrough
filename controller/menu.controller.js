@@ -18,7 +18,7 @@ sap.ui.define([
 		*/
 		omMenuItemPress: function(oEvent){
 			// получаем данные части модели, которая связана с пунктом меню
-			let oContext = oEvent.getSource().getBindingContext("Invoices").getObject();
+			let oContext = oEvent.getSource().getBindingContext("invoice").getObject();
 			//let sId = oContext.id;
 			// из полученных данных извлекаем част ьпро навигацию/роутинг (сами добавили в модели в json файле)
 			let oNavData = oContext.nav;
