@@ -109,6 +109,11 @@
 					"page": {
 					  "viewId": "page",
 					  "viewName": "Page"
+						},
+						"Invoices": {
+						  "viewName": "Invoices",
+						  "controlAggregation": "detailPages",
+						  "viewLevel": 2
 						}
 				 }
 			}
