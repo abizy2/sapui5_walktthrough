@@ -7,7 +7,7 @@ sap.ui.define([
 ], function (MessageToast, Controller, Log) {
   //"use strict";
 
-  return Controller.extend('SplitApp.controller.about', {
+  return Controller.extend('SplitApp.controller.item', {
 
     onInit: function onInit () {
     },

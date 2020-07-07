@@ -6,49 +6,28 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("SplitApp.controller.menu", {
+	
 
-		
-
-		onOrientationChange: function (oEvent) {
-			var bLandscapeOrientation = oEvent.getParameter("landscape"),
-				sMsg = "Orientation now is: " + (bLandscapeOrientation ? "Landscape" : "Portrait");
-			MessageToast.show(sMsg, { duration: 5000 });
+    onInit: function onInit () {
+			// Подцепляем роутер, чтобы использовать его события и методы
+      this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+    },
+		/**
+		* Обработчик события нажатия на пункт меню
+		* @param {objext} oEvent - объект с параметрами события (в данном случае события нажатия на пункт меню)
+		*/
+		omMenuItemPress: function(oEvent){
+			// получаем данные части модели, которая связана с пунктом меню
+			let oContext = oEvent.getSource().getBindingContext("Invoices").getObject();
+			//let sId = oContext.id;
+			// из полученных данных извлекаем част ьпро навигацию/роутинг (сами добавили в модели в json файле)
+			let oNavData = oContext.nav;
+			// получаем имя роута, куда будум переходить
+			let sRoutName = oNavData.rout;
+			// пролучаем параметры для роута, если они есть.
+			let aParams = oNavData.params;
+			// переходим по роуту
+			this.oRouter.navTo(sRoutName, aParams);
 		},
-
-		onPressNavToDetail: function () {
-			this.getSplitAppObj().to(this.createId("detailDetail"));
-		},
-
-		onPressDetailBack: function () {
-			this.getSplitAppObj().backDetail();
-		},
-
-		onPressMasterBack: function () {
-			this.getSplitAppObj().backMaster();
-		},
-
-		onPressGoToMaster: function () {
-			this.getSplitAppObj().toMaster(this.createId("master2"));
-		},
-
-		onPressModeBtn: function (oEvent) {
-			var sSplitAppMode = oEvent.getSource().getSelectedButton().getCustomData()[0].getValue();
-
-			this.getSplitAppObj().setMode(sSplitAppMode);
-			MessageToast.show("Split Container mode is changed to: " + sSplitAppMode, { duration: 5000 });
-		},
-
-		getSplitAppObj: function () {
-			var result = this.byId("SplitAppDemo");
-			if (!result) {
-				Log.info("SplitApp object can't be found");
-			}
-			return result;
-		},
-		
-		//onListItem: function () {
-		//var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-		//oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
-		//}
-	});
+  })		
 });
