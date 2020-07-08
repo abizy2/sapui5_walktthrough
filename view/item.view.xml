@@ -1,5 +1,5 @@
 <mvc:View 
-  controllerName="SplitApp.controller.item"
+  controllerName="namespace.controller.item"
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">

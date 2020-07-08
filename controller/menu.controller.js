@@ -1,12 +1,16 @@
-sap.ui.define([
-	"sap/m/MessageToast",
-	"sap/ui/core/mvc/Controller",
-	"sap/base/Log"
-], function (MessageToast, Controller, Log) {
-	"use strict";
+//"use strict";
 
-	return Controller.extend("SplitApp.controller.menu", {
-	
+sap.ui.define([
+	'sap/ui/core/mvc/Controller', 
+	'sap/ui/model/json/JSONModel', 
+	'sap/ui/model/resource/ResourceModel'
+], function (
+	Controller, 
+	SONModel, 
+	ResourceModel) {
+  //"use strict";
+
+  return Controller.extend('namespace.controller.menu', {
 
     onInit: function onInit () {
 			// Подцепляем роутер, чтобы использовать его события и методы
@@ -18,7 +22,7 @@ sap.ui.define([
 		*/
 		omMenuItemPress: function(oEvent){
 			// получаем данные части модели, которая связана с пунктом меню
-			let oContext = oEvent.getSource().getBindingContext("invoice").getObject();
+			let oContext = oEvent.getSource().getBindingContext("main").getObject();
 			//let sId = oContext.id;
 			// из полученных данных извлекаем част ьпро навигацию/роутинг (сами добавили в модели в json файле)
 			let oNavData = oContext.nav;
@@ -28,6 +32,6 @@ sap.ui.define([
 			let aParams = oNavData.params;
 			// переходим по роуту
 			this.oRouter.navTo(sRoutName, aParams);
-		},
-  })		
+		}
+  });
 });

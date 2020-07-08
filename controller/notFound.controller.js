@@ -10,7 +10,7 @@ sap.ui.define([
 	ResourceModel) {
   //"use strict";
 
-  return Controller.extend('namespace.controller.busket', {
+  return Controller.extend('namespace.controller.notFound', {
 
     onInit: function onInit () {
     },

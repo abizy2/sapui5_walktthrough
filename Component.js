@@ -1,9 +1,14 @@
-sap.ui.define([
-	"sap/ui/core/UIComponent"
-], function (UIComponent) {
-	"use strict";
+//'use strict';
 
-	 return UIComponent.extend('SplitApp.Component', {
+sap.ui.define(
+  [
+    'sap/ui/core/UIComponent',
+    'sap/m/MessageBox'
+  ],
+  function(UIComponent, MessageBox) {
+    //'use strict';
+
+    return UIComponent.extend('namespace.Component', {
       metadata: {
         manifest: 'json' // подцепляем еастройки из манифеста
       },
@@ -12,10 +17,11 @@ sap.ui.define([
         // call the init function of the parent
         UIComponent.prototype.init.apply(this, arguments); // it is obligatory(обязательно) to make the super call        
 
-        this.oMainModel = this.getModel('invoice'); // from manifest.json			
+        this.oMainModel = this.getModel('main'); // from manifest.json			
 				
         this.oRouter = this.getRouter(); 
 				this.oRouter.initialize(); // запускаем роутинг (берет настройки из манифеста)
+        this.oRouter.attachBeforeRouteMatched(this._handleRout.bind(this)); // вообще не нужно, просто пример цепляния обрботчика события.
 				// срабатывает перед тем, как произойдет обработка события совпадения URL 
 					
 				this._setMainmenu(); // формируем данные для главногог меню.
@@ -52,6 +58,11 @@ sap.ui.define([
 					that.oMainModel.setProperty("/mainMenu", aMenu);
 				});
 				
+			},
+			_handleRout: function(oEvent){
+				 // тут можно получить название роута, который только что сработал, но переход еще не осуществлен. Просто пример.
+				 let sName = oEvent.getParameter("name"); 
+				 //debugger;
 			}
     
     });

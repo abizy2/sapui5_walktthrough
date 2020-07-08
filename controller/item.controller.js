@@ -1,13 +1,16 @@
 //"use strict";
 
 sap.ui.define([
-	"sap/m/MessageToast",
-	"sap/ui/core/mvc/Controller",
-	"sap/base/Log"
-], function (MessageToast, Controller, Log) {
+	'sap/ui/core/mvc/Controller', 
+	'sap/ui/model/json/JSONModel', 
+	'sap/ui/model/resource/ResourceModel'
+], function (
+	Controller, 
+	SONModel, 
+	ResourceModel) {
   //"use strict";
 
-  return Controller.extend('SplitApp.controller.item', {
+  return Controller.extend('namespace.controller.item', {
 
     onInit: function onInit () {
     },

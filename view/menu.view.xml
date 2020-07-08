@@ -1,25 +1,19 @@
-<mvc:View
-	controllerName="SplitApp.controller.menu"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	height="100%"
-	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">			
-		<Page
-			id="master2"
-			title="Комплектующие"
-			backgroundDesign= "List"
-			icon="sap-icon://action"
-			class="sapUiStdPage"
-			showNavButton="true"
-			navButtonPress=".onPressMasterBack"
+<mvc:View 
+  controllerName="namespace.controller.menu"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="Меню">
+		<!-- Биндим список на свойство модели, в котором хранится массив пунктов меню -->
+		<List
+			items="{main>/mainMenu}"
 			>
-			<List 
-			itemPress="onListItemPress"
-			items="{invoice>/Invoices}">
-				<items>
-					<StandardListItem title="{invoice>ProductName}" type="Active"
-						/>
-				</items>
-			</List>
-		</Page>	
+			<StandardListItem
+				title="{main>title}"
+				description="{main>ProductId}"
+				type='Active'
+				press="omMenuItemPress"/>
+		</List>
+	</Page>
 </mvc:View>

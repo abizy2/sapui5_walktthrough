@@ -1,10 +1,10 @@
 <mvc:View 
-  controllerName="SplitApp.controller.App"
+  controllerName="namespace.controller.App"
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">
   <SplitApp 
-    id="splitApp"
+    id="app"
     class="sapUiSizeCompact" />
 		<!-- Это главная вьюшка. Тут ничего менять/добавлять не требуется -->
 </mvc:View>

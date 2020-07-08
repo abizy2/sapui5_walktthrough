@@ -1,0 +1,132 @@
+{
+	"types": [
+		{
+			"id": "Graphics Cards",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Graphics Cards"
+				}
+			},
+			"title": "Видеокарты"
+		
+		},
+		{
+			"id": "Mother Plate",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Mother Plate"
+				}
+			},
+			"title": "Материнские платы"
+		},
+		{
+			"id": "Processor",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Processor"
+				}
+			},
+			"title": "Процессоры"
+		},
+		{
+			"id": "Operative Memory",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "Operative Memory"
+				}
+			},
+			"title": "Оперативные памяти"
+		},
+		{
+			"id": "SSD",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "SSD"
+				}
+			},
+			"title": "Твердотельные накопители"
+		},
+		{
+			"id": "HDD",
+			"nav": {
+				"rout": "category",
+				"params": {
+					"category": "HDD"
+				}
+			},
+			"title": "Жесткие диски"
+		}
+
+	],
+	"catalog": [
+		{
+			"type": "Graphics Cards",
+			"title": "Geforce GTX 2060 Super",
+			"ExtendedPrice": 25999,
+			"ProductID": "001",
+			"ShippedDate": "fdsdffdsdsf",
+			"Photo": "images/video.png"
+		},
+		{
+			"type": "Graphics Cards",
+			"title": "Geforce GTX 2070 Super",
+			"ExtendedPrice": 25999,
+		    "ProductID": "001",
+			"ShippedDate": "fdsdffdsdsf",
+			"Photo": "images/video.png"
+		},
+		{
+			"type": "Mother Plate",
+			"type": "ASUS PRIME Z270-P",
+			"ExtendedPrice": 6999,
+			"ProductID": "002",
+			"ShippedDate": "2019-11-18T00:00:00",
+			"Photo": "images/matplata.png"
+		},
+		{
+			"type": "Mother Plate",
+			"title": "Z390 Phantom Gaming 6",
+			"ExtendedPrice": 6999,
+			"ProductID": "002",
+			"ShippedDate": "2019-11-18T00:00:00",
+			"Photo": "images/matplata.png"
+		},
+		{
+			"type": "Processor",
+			"title": "Intel Core i5-9600KF",
+			"ExtendedPrice": 15999,
+			"ProductID": "003",
+			"ShippedDate": "2019-11-18T00:00:00",
+			"Photo": "images/proc.png"
+		},
+		{
+			"type": "Operative Memory",
+			"title": "A-Data XPG Flame 16 ГБ",
+			"ExtendedPrice": 4599,
+			"ProductID": "004",
+			"ShippedDate": "2019-11-19T00:00:00",
+			"Photo": "images/oper.png"
+		},
+		{
+			"type": "SSD",
+			"title": "Samsung Portable SSD T5 1 ТБ",
+			"ExtendedPrice": 5999,
+			"ProductID": "005",
+			"ShippedDate": "2019-11-21T00:00:00",
+			"Photo": "images/ssd.png"
+		},
+		{
+			"type": "HDD",
+			"title": "1 ТБ Жесткий диск Seagate 7200 BarraCuda",
+			"ExtendedPrice": 3999,
+			"ProductID": "006",
+			"ShippedDate": "2019-11-20T00:00:00",
+			"Photo": "images/hdd.png"
+		}
+	]
+}
