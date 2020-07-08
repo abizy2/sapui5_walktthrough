@@ -47,6 +47,6 @@ sap.ui.define([
 				// применяем фильтры к списку
 				oList.getBinding('items').filter(oFilter);
       }, this);
-    },
+    }
   });
 });
