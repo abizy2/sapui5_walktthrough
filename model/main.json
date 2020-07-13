@@ -70,7 +70,7 @@
 			"ExtendedPrice": 25999,
 			"ProductID": "001",
 			"ShippedDate": "fdsdffdsdsf",
-			"Photo": "images/video.png"
+			"photo": "images/video.png"
 		},
 		{
 			"type": "Graphics Cards",
@@ -78,7 +78,7 @@
 			"ExtendedPrice": 25999,
 		    "ProductID": "001",
 			"ShippedDate": "fdsdffdsdsf",
-			"Photo": "images/video.png"
+			"photo": "images/video.png"
 		},
 		{
 			"type": "Mother Plate",
@@ -86,7 +86,7 @@
 			"ExtendedPrice": 6999,
 			"ProductID": "002",
 			"ShippedDate": "2019-11-18T00:00:00",
-			"Photo": "images/matplata.png"
+			"photo": "images/matplata.png"
 		},
 		{
 			"type": "Mother Plate",
@@ -94,7 +94,7 @@
 			"ExtendedPrice": 6999,
 			"ProductID": "002",
 			"ShippedDate": "2019-11-18T00:00:00",
-			"Photo": "images/matplata.png"
+			"photo": "images/matplata.png"
 		},
 		{
 			"type": "Processor",
@@ -102,7 +102,7 @@
 			"ExtendedPrice": 15999,
 			"ProductID": "003",
 			"ShippedDate": "2019-11-18T00:00:00",
-			"Photo": "images/proc.png"
+			"photo": "images/proc.png"
 		},
 		{
 			"type": "Operative Memory",
@@ -110,7 +110,7 @@
 			"ExtendedPrice": 4599,
 			"ProductID": "004",
 			"ShippedDate": "2019-11-19T00:00:00",
-			"Photo": "images/oper.png"
+			"photo": "images/oper.png"
 		},
 		{
 			"type": "SSD",
@@ -118,7 +118,7 @@
 			"ExtendedPrice": 5999,
 			"ProductID": "005",
 			"ShippedDate": "2019-11-21T00:00:00",
-			"Photo": "images/ssd.png"
+			"photo": "images/ssd.png"
 		},
 		{
 			"type": "HDD",
@@ -126,7 +126,7 @@
 			"ExtendedPrice": 3999,
 			"ProductID": "006",
 			"ShippedDate": "2019-11-20T00:00:00",
-			"Photo": "images/hdd.png"
+			"photo": "images/hdd.png"
 		}
 	]
 }
