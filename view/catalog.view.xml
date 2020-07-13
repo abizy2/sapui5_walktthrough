@@ -10,7 +10,12 @@
 			tiles="{main>/catalog}">
 			<StandardTile
 			title="{main>title}"
+			number="{main>ExtendedPrice}"
+			icon="{main>photo}"
 			/>
+			<!-- <TileContent>
+		</TileContent> -->
+			
 		</TileContainer>
 	</Page>
 </mvc:View>
