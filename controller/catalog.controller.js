@@ -3,14 +3,18 @@
 sap.ui.define([
 	'sap/ui/core/mvc/Controller', 
 	'sap/ui/model/json/JSONModel', 
-	'sap/ui/model/resource/ResourceModel'
+	"sap/m/MessageBox"
 ], function (
 	Controller, 
-	SONModel, 
-	ResourceModel) {
+	SONModel, 	
+	MessageBox) {
   //"use strict";
 
   return Controller.extend('namespace.controller.catalog', {
+	  
+	  onPress: function () {
+			MessageBox.confirm("Add to cart?");
+		},
 
     onInit: function onInit () {
 			// получаем роутер
@@ -47,6 +51,7 @@ sap.ui.define([
 				// применяем фильтры к списку
 				oList.getBinding('items').filter(oFilter);
       }, this);
-    }
+    },
+	
   });
 });

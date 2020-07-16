@@ -5,17 +5,19 @@
   xmlns:mvc="sap.ui.core.mvc">
 	<Page
 		title="Каталог">
-		 <TileContainer
+		<HBox
 			id="catalogList"
-			tiles="{main>/catalog}">
-			<StandardTile
-			title="{main>title}"
-			number="{main>ExtendedPrice}"
-			icon="{main>photo}"
-			/>
-			<!-- <TileContent>
-		</TileContent> -->
-			
-		</TileContainer>
+			items="{main>/catalog}">
+			<GenericTile
+				header="{main>title}"
+				subheader="{main>ExtendedPrice}"
+				headerImage="{main>photo}">
+					<TileContent footer="{main>Quantity}">
+					<VBox>
+						<Button text="Buy" press="onPress" > </Button> 
+						</VBox>
+					</TileContent>
+			</GenericTile>
+		</HBox>
 	</Page>
 </mvc:View>

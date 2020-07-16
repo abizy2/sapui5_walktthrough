@@ -5,5 +5,6 @@
   xmlns:mvc="sap.ui.core.mvc">
 	<Page
 		title="Корзина">
+		
 	</Page>
 </mvc:View>
