@@ -10,11 +10,23 @@ sap.ui.define([
 	MessageBox) {
   //"use strict";
 
-  return Controller.extend('namespace.controller.catalog', {
-	  
-	  onPress: function () {
-			MessageBox.confirm("Add to cart?");
-		},
+return Controller.extend('namespace.controller.catalog', {
+ onPress: function(oEvent) {
+    var cartData = oEvent.getSource().getBindingContext("main").getObject()
+    let oModel = oEvent.getSource().getModel("main");
+    var oData = oModel.getProperty("/busket");
+    var name;
+    if (Array.isArray(oData)) {
+        name = cartData.type;
+    } else {
+        oData = [];
+    }
+    if (cartData.find(name)) {
+
+    } else {
+        oData.push(name);
+    }
+},
 
     onInit: function onInit () {
 			// получаем роутер

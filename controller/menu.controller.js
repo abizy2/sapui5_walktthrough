@@ -15,6 +15,7 @@ sap.ui.define([
     onInit: function onInit () {
 			// Подцепляем роутер, чтобы использовать его события и методы
       this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+
     },
 		/**
 		* Обработчик события нажатия на пункт меню

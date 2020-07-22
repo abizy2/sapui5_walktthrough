@@ -5,6 +5,15 @@
   xmlns:mvc="sap.ui.core.mvc">
 	<Page
 		title="Корзина">
-		
+		<List
+			id='BusketList'
+			items="{main>/busket}">
+			<StandardListItem
+				title="{main>title}"
+				description="{main>type}"
+				type='Active'
+				press="omCatalogItemPress"/>
+		</List>
 	</Page>
+					
 </mvc:View>

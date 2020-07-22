@@ -70,7 +70,8 @@
 			"ExtendedPrice": 25999,
 			"Quantity": "11",
 			"ShippedDate": "fdsdffdsdsf",
-			"photo": "images/video.png"
+			"photo": "images/video.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "Graphics Cards",
@@ -78,7 +79,8 @@
 			"ExtendedPrice": 25999,
 		    "Quantity": "12",
 			"ShippedDate": "fdsdffdsdsf",
-			"photo": "images/video.png"
+			"photo": "images/video.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "Mother Plate",
@@ -86,7 +88,8 @@
 			"ExtendedPrice": 6999,
 			"Quantity": "7",
 			"ShippedDate": "2019-11-18T00:00:00",
-			"photo": "images/matplata.png"
+			"photo": "images/matplata.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "Mother Plate",
@@ -94,7 +97,8 @@
 			"ExtendedPrice": 6999,
 			"Quantity": "3",
 			"ShippedDate": "2019-11-18T00:00:00",
-			"photo": "images/matplata.png"
+			"photo": "images/matplata.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "Processor",
@@ -102,7 +106,8 @@
 			"ExtendedPrice": 15999,
 			"Quantity": "10",
 			"ShippedDate": "2019-11-18T00:00:00",
-			"photo": "images/proc.png"
+			"photo": "images/proc.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "Operative Memory",
@@ -110,7 +115,8 @@
 			"ExtendedPrice": 4599,
 			"Quantity": "15",
 			"ShippedDate": "2019-11-19T00:00:00",
-			"photo": "images/oper.png"
+			"photo": "images/oper.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "SSD",
@@ -118,7 +124,8 @@
 			"ExtendedPrice": 5999,
 			"Quantity": "19",
 			"ShippedDate": "2019-11-21T00:00:00",
-			"photo": "images/ssd.png"
+			"photo": "images/ssd.png",
+			"busket":"qweq"
 		},
 		{
 			"type": "HDD",
@@ -126,7 +133,8 @@
 			"ExtendedPrice": 3999,
 			"Quantity": "25",
 			"ShippedDate": "2019-11-20T00:00:00",
-			"photo": "images/hdd.png"
+			"photo": "images/hdd.png",
+			"busket":"qweq"
 		}
 	]
 }
