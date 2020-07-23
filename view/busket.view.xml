@@ -10,6 +10,7 @@
 			items="{main>/busket}">
 			<StandardListItem
 				title="{main>title}"
+				icon="{main>photo}"
 				description="{main>type}"
 				type='Active'
 				press="omCatalogItemPress"/>

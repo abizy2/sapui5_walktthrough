@@ -15,17 +15,18 @@ return Controller.extend('namespace.controller.catalog', {
     var cartData = oEvent.getSource().getBindingContext("main").getObject()
     let oModel = oEvent.getSource().getModel("main");
     var oData = oModel.getProperty("/busket");
-    var name;
+    var name = cartData.type;
     if (Array.isArray(oData)) {
-        name = cartData.type;
+
     } else {
         oData = [];
     }
-    if (cartData.find(name)) {
+    if (oData.find((currentLine) => currentLine == name)) {
 
     } else {
         oData.push(name);
     }
+	oModel.setProperty("/busket", oData);
 },
 
     onInit: function onInit () {
