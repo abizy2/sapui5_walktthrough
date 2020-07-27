@@ -9,10 +9,10 @@
 			id='BusketList'
 			items="{main>/busket}">
 			<StandardListItem
-				title="{main>title}"
+				title="{main>name}"
 				icon="{main>photo}"
-				description="{main>type}"
 				type='Active'
+				subheader="{main>ExtendedPrice}"
 				press="omCatalogItemPress"/>
 		</List>
 	</Page>

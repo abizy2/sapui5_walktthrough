@@ -16,15 +16,20 @@ return Controller.extend('namespace.controller.catalog', {
     let oModel = oEvent.getSource().getModel("main");
     var oData = oModel.getProperty("/busket");
     var name = cartData.type;
+	var photo = cartData.photo;
+	var ExtendedPrice = cartData.ExtendedPrice;
     if (Array.isArray(oData)) {
 
     } else {
         oData = [];
     }
-    if (oData.find((currentLine) => currentLine == name)) {
+	
+    if (oData.find((currentLine) => currentLine.name == name)) {
+		
 
     } else {
-        oData.push(name);
+        oData.push({name:name,photo:photo, ExtendedPrice:ExtendedPrice});
+		
     }
 	oModel.setProperty("/busket", oData);
 },
