@@ -69,7 +69,7 @@
 			"title": "Geforce GTX 2060 Super",
 			"ExtendedPrice": 25999,
 			"Quantity": "11",
-			"ShippedDate": "fdsdffdsdsf",
+			"CurrencyCode": "RUB",
 			"photo": "images/video.png",
 			"busket":"qweq"
 		},
@@ -78,7 +78,7 @@
 			"title": "Geforce GTX 2070 Super",
 			"ExtendedPrice": 25999,
 		    "Quantity": "12",
-			"ShippedDate": "fdsdffdsdsf",
+			"CurrencyCode": "RUB",
 			"photo": "images/video.png",
 			"busket":"qweq"
 		},
@@ -87,7 +87,7 @@
 			"title": "ASUS PRIME Z270-P",
 			"ExtendedPrice": 6999,
 			"Quantity": "7",
-			"ShippedDate": "2019-11-18T00:00:00",
+			"CurrencyCode": "RUB",
 			"photo": "images/matplata.png",
 			"busket":"qweq"
 		},
@@ -96,7 +96,7 @@
 			"title": "Z390 Phantom Gaming 6",
 			"ExtendedPrice": 6999,
 			"Quantity": "3",
-			"ShippedDate": "2019-11-18T00:00:00",
+			"CurrencyCode": "RUB",
 			"photo": "images/matplata.png",
 			"busket":"qweq"
 		},
@@ -105,7 +105,7 @@
 			"title": "Intel Core i5-9600KF",
 			"ExtendedPrice": 15999,
 			"Quantity": "10",
-			"ShippedDate": "2019-11-18T00:00:00",
+			"CurrencyCode": "RUB",
 			"photo": "images/proc.png",
 			"busket":"qweq"
 		},
@@ -114,7 +114,7 @@
 			"title": "A-Data XPG Flame 16 ГБ",
 			"ExtendedPrice": 4599,
 			"Quantity": "15",
-			"ShippedDate": "2019-11-19T00:00:00",
+			"CurrencyCode": "RUB",
 			"photo": "images/oper.png",
 			"busket":"qweq"
 		},
@@ -123,7 +123,7 @@
 			"title": "Samsung Portable SSD T5 1 ТБ",
 			"ExtendedPrice": 5999,
 			"Quantity": "19",
-			"ShippedDate": "2019-11-21T00:00:00",
+			"CurrencyCode": "RUB",
 			"photo": "images/ssd.png",
 			"busket":"qweq"
 		},
@@ -132,7 +132,7 @@
 			"title": "1 ТБ Жесткий диск Seagate 7200 BarraCuda",
 			"ExtendedPrice": 3999,
 			"Quantity": "25",
-			"ShippedDate": "2019-11-20T00:00:00",
+			"CurrencyCode": "RUB",
 			"photo": "images/hdd.png",
 			"busket":"qweq"
 		}

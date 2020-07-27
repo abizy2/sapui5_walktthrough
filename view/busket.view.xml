@@ -3,18 +3,49 @@
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">
-	<Page
-		title="Корзина">
-		<List
+		<Table
 			id='BusketList'
 			items="{main>/busket}">
-			<StandardListItem
-				title="{main>name}"
-				icon="{main>photo}"
-				type='Active'
-				subheader="{main>ExtendedPrice}"
-				press="omCatalogItemPress"/>
-		</List>
-	</Page>
+				<columns>
+			<Column
+				width="12em">
+				<Text text="Фотография товара" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Название продукта" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Количество" />
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="Цена" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectListItem
+						icon="{main>photo}"/>
+					<Text
+						text="{main>title}" />
+					<Text
+						text = "{main>Quantity}"
+						/>
+					<ObjectNumber
+							number="{main>ExtendedPrice}"
+							unit= "{main>CurrencyCode}"
+							 />
+				</cells>
+			</ColumnListItem>
+		</items>
+		</Table>
+	
 					
 </mvc:View>

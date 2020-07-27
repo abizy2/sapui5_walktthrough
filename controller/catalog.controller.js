@@ -11,28 +11,42 @@ sap.ui.define([
   //"use strict";
 
 return Controller.extend('namespace.controller.catalog', {
- onPress: function(oEvent) {
-    var cartData = oEvent.getSource().getBindingContext("main").getObject()
-    let oModel = oEvent.getSource().getModel("main");
-    var oData = oModel.getProperty("/busket");
-    var name = cartData.type;
-	var photo = cartData.photo;
-	var ExtendedPrice = cartData.ExtendedPrice;
-    if (Array.isArray(oData)) {
+        onPress: function(oEvent) {
+            var cartData = oEvent.getSource().getBindingContext("main").getObject()
+            let oModel = oEvent.getSource().getModel("main");
+            var oData = oModel.getProperty("/busket")
+            name = cartData.type
+            photo = cartData.photo
+            ExtendedPrice = cartData.ExtendedPrice
+            Quantity = cartData.Quantity
+            title = cartData.title
+            CurrencyCode = cartData.CurrencyCode;
+            if (Array.isArray(oData)) {
 
-    } else {
-        oData = [];
-    }
-	
-    if (oData.find((currentLine) => currentLine.name == name)) {
-		
+            } else {
+                oData = [];
+            }
 
-    } else {
-        oData.push({name:name,photo:photo, ExtendedPrice:ExtendedPrice});
-		
-    }
-	oModel.setProperty("/busket", oData);
-},
+            let oBusketItem = oData.find((currentLine) => currentLine.name == name);
+            if (oBusketItem) {
+                oBusketItem.Quantity;
+            }
+        } else {
+            oData.push({
+                name: name,
+                photo: photo,
+                ExtendedPrice: ExtendedPrice,
+                Quantity: 1,
+                title: title,
+                CurrencyCode: CurrencyCode
+            });
+        }
+			let nIndex = oData.findIndex((currentIndex) => currentIndex == oBusket.Quantity);
+		}
+        oModel.setProperty("nIndex", oData); 
+        oModel.setProperty("/busket", oData);
+    },
+
 
     onInit: function onInit () {
 			// получаем роутер
