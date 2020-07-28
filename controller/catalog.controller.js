@@ -31,7 +31,7 @@ return Controller.extend('namespace.controller.catalog', {
             if (oBusketItem) {
                 oBusketItem.Quantity;
             }
-        } else {
+         else {
             oData.push({
                 name: name,
                 photo: photo,
@@ -41,11 +41,12 @@ return Controller.extend('namespace.controller.catalog', {
                 CurrencyCode: CurrencyCode
             });
         }
-			let nIndex = oData.findIndex((currentIndex) => currentIndex == oBusket.Quantity);
+			//let nIndex = oData.findIndex((currentIndex) => currentIndex == oBusketItem);
+		
 		}
-        oModel.setProperty("nIndex", oData); 
+			//oModel.setProperty("nIndex", oData); 
         oModel.setProperty("/busket", oData);
-    },
+    
 
 
     onInit: function onInit () {
