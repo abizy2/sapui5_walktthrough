@@ -52,7 +52,7 @@ sap.ui.define([
 			var cartData = oEvent.getSource().getBindingContext("main").getObject()
 			let oModel = oEvent.getSource().getModel("main");
 			var oData = oModel.getProperty("/busket")
-			name = cartData.type
+			name = cartData.title
 			photo = cartData.photo
 			ExtendedPrice = cartData.ExtendedPrice
 			Quantity = cartData.Quantity
@@ -66,7 +66,7 @@ sap.ui.define([
 
 			let oBusketItem = oData.find((currentLine) => currentLine.name == name);
 			if (oBusketItem) {
-				let oBusketItemIndex = oData.findIndex((currentLine) => currentLine.name == oBusketItem);
+				let oBusketItemIndex = oData.findIndex((currentLine) => currentLine.name == name);
 				let QuantityBusket = oBusketItem.Quantity;
 				QuantityBusket ++;
 				oModel.setProperty("/busket/"+oBusketItemIndex+"/Quantity", QuantityBusket)

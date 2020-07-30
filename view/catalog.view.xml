@@ -14,7 +14,7 @@
 				headerImage="{main>photo}">
 					<TileContent footer="{main>Quantity}">
 					<VBox>
-						<Button text="Buy" press="onPress" > </Button> 
+						<Button text="Купить" press="onPress" > </Button> 
 						</VBox>
 					</TileContent>
 			</GenericTile>

@@ -71,7 +71,7 @@
 			"Quantity": "11",
 			"CurrencyCode": "RUB",
 			"photo": "images/video.png",
-			"busket":"qweq"
+			"busket":"qweqwvsdv"
 		},
 		{
 			"type": "Graphics Cards",
@@ -79,8 +79,8 @@
 			"ExtendedPrice": 25999,
 		    "Quantity": "12",
 			"CurrencyCode": "RUB",
-			"photo": "images/video.png",
-			"busket":"qweq"
+			"photo": "images/video2.png",
+			"busket":"qweqwdas"
 		},
 		{
 			"type": "Mother Plate",
@@ -89,7 +89,7 @@
 			"Quantity": "7",
 			"CurrencyCode": "RUB",
 			"photo": "images/matplata.png",
-			"busket":"qweq"
+			"busket":"qweqw"
 		},
 		{
 			"type": "Mother Plate",
@@ -97,8 +97,8 @@
 			"ExtendedPrice": 6999,
 			"Quantity": "3",
 			"CurrencyCode": "RUB",
-			"photo": "images/matplata.png",
-			"busket":"qweq"
+			"photo": "images/matplata2.png",
+			"busket":"qweqedsa"
 		},
 		{
 			"type": "Processor",
@@ -107,7 +107,7 @@
 			"Quantity": "10",
 			"CurrencyCode": "RUB",
 			"photo": "images/proc.png",
-			"busket":"qweq"
+			"busket":"qweqff"
 		},
 		{
 			"type": "Operative Memory",
@@ -116,7 +116,7 @@
 			"Quantity": "15",
 			"CurrencyCode": "RUB",
 			"photo": "images/oper.png",
-			"busket":"qweq"
+			"busket":"qweqaa"
 		},
 		{
 			"type": "SSD",
@@ -125,7 +125,7 @@
 			"Quantity": "19",
 			"CurrencyCode": "RUB",
 			"photo": "images/ssd.png",
-			"busket":"qweq"
+			"busket":"qweqdd"
 		},
 		{
 			"type": "HDD",
@@ -134,7 +134,7 @@
 			"Quantity": "25",
 			"CurrencyCode": "RUB",
 			"photo": "images/hdd.png",
-			"busket":"qweq"
+			"busket":"qweqccc"
 		}
 	]
 }
