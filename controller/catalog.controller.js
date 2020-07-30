@@ -50,7 +50,7 @@ sap.ui.define([
 		
 		onPress: function(oEvent) {
 			var cartData = oEvent.getSource().getBindingContext("main").getObject()
-			let oModel = oEvent.getSource().getModel("main");
+			let oModel = oEvent.getSource().getModel("main")
 			var oData = oModel.getProperty("/busket")
 			name = cartData.title
 			photo = cartData.photo

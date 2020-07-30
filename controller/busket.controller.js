@@ -14,7 +14,18 @@ sap.ui.define([
 
 	  
 
-    onInit: function onInit () {
+    onAdd: function(oEvent) {
+	var sBusketRowPath = oEvent.getSource().getBindingPath("main")
+			let oModel = oEvent.getSource().getModel('main').getProperty('/busket')
+	var getQuantity = sBusketRowPath.Quantity
+	getQuantity++;
+	oModel.setProperty("/busket", getQuantity)
     },
+	
+	
+	
+	onDelete: function(oEvent) {
+		
+    }
   });
 });

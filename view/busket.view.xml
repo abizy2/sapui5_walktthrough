@@ -35,9 +35,16 @@
 						icon="{main>photo}"/>
 					<Text
 						text="{main>title}" />
-					<Text
-						text = "{main>Quantity}"
-						/>
+					<HBox>
+						<Button text="-" press="onDelete">
+											</Button> 
+											<Input value= "{main>Quantity}" width="2em">
+											</Input>
+											<Button text="+" press="onAdd">
+											</Button> 
+							
+					</HBox>
+						
 					<ObjectNumber
 							number="{main>ExtendedPrice}"
 							unit= "{main>CurrencyCode}"
