@@ -15,11 +15,13 @@ sap.ui.define([
 	  
 
     onAdd: function(oEvent) {
-	var sBusketRowPath = oEvent.getSource().getBindingPath("main")
-			let oModel = oEvent.getSource().getModel('main').getProperty('/busket')
-	var getQuantity = sBusketRowPath.Quantity
-	getQuantity++;
-	oModel.setProperty("/busket", getQuantity)
+	var sBusketRowPath = oEvent.getBindingContext("main").getPath();
+	let oModel = oEvent.getSource().getModel('main')
+	var oBusketIttem = oModel.getProperty(sBusketRowPath)
+	
+	
+	//getQuantity++;
+	//oModel.setProperty("/busket", getQuantity)
     },
 	
 	

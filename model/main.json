@@ -71,7 +71,7 @@
 			"Quantity": "11",
 			"CurrencyCode": "RUB",
 			"photo": "images/video.png",
-			"busket":"qweqwvsdv"
+			"busket":"1"
 		},
 		{
 			"type": "Graphics Cards",
@@ -80,7 +80,25 @@
 		    "Quantity": "12",
 			"CurrencyCode": "RUB",
 			"photo": "images/video2.png",
-			"busket":"qweqwdas"
+			"busket":"2"
+		},
+		{
+			"type": "Graphics Cards",
+			"title": "AMD Radeon RX 560 PULSE 14 CU",
+			"ExtendedPrice": 6599,
+			"Quantity": "12",
+			"CurrencyCode": "RUB",
+			"photo": "images/video3.png",
+			"busket":"3"
+		},
+		{
+			"type": "Graphics Cards",
+			"title": "MSI GeForce GT 710 Silent LP",
+			"ExtendedPrice": 2499,
+		    "Quantity": "9",
+			"CurrencyCode": "RUB",
+			"photo": "images/video4.png",
+			"busket":"4"
 		},
 		{
 			"type": "Mother Plate",
@@ -89,7 +107,7 @@
 			"Quantity": "7",
 			"CurrencyCode": "RUB",
 			"photo": "images/matplata.png",
-			"busket":"qweqw"
+			"busket":"5"
 		},
 		{
 			"type": "Mother Plate",
@@ -98,16 +116,70 @@
 			"Quantity": "3",
 			"CurrencyCode": "RUB",
 			"photo": "images/matplata2.png",
-			"busket":"qweqedsa"
+			"busket":"6"
+		},
+				{
+			"type": "Mother Plate",
+			"title": "ASRock X370 Pro4",
+			"ExtendedPrice": 6099,
+			"Quantity": "18",
+			"CurrencyCode": "RUB",
+			"photo": "images/matplata3.png",
+			"busket":"7"
+		},
+		{
+			"type": "Mother Plate",
+			"title": "ASUS M5A78L-M LX3",
+			"ExtendedPrice": 2799,
+			"Quantity": "11",
+			"CurrencyCode": "RUB",
+			"photo": "images/matplata4.png",
+			"busket":"8"
 		},
 		{
 			"type": "Processor",
 			"title": "Intel Core i5-9600KF",
-			"ExtendedPrice": 15999,
+			"ExtendedPrice": 17999,
 			"Quantity": "10",
 			"CurrencyCode": "RUB",
 			"photo": "images/proc.png",
-			"busket":"qweqff"
+			"busket":"9"
+		},
+		{
+			"type": "Processor",
+			"title": "AMD Ryzen 5 3600 BOX",
+			"ExtendedPrice": 15999,
+			"Quantity": "22",
+			"CurrencyCode": "RUB",
+			"photo": "images/proc2.png",
+			"busket":"10"
+		},
+		{
+			"type": "Processor",
+			"title": "AMD Ryzen 3 3200G BOX",
+			"ExtendedPrice": 8350,
+			"Quantity": "10",
+			"CurrencyCode": "RUB",
+			"photo": "images/proc3.png",
+			"busket":"11"
+		},
+		{
+			"type": "Processor",
+			"title": "Intel Core i7-9700K OEM",
+			"ExtendedPrice": 31999,
+			"Quantity": "3",
+			"CurrencyCode": "RUB",
+			"photo": "images/proc4.png",
+			"busket":"12"
+		},
+		{
+			"type": "Processor",
+			"title": "Intel Core i9-9900K OEM",
+			"ExtendedPrice": 38999,
+			"Quantity": "5",
+			"CurrencyCode": "RUB",
+			"photo": "images/proc5.png",
+			"busket":"13"
 		},
 		{
 			"type": "Operative Memory",
@@ -116,16 +188,70 @@
 			"Quantity": "15",
 			"CurrencyCode": "RUB",
 			"photo": "images/oper.png",
-			"busket":"qweqaa"
+			"busket":"14"
+		},
+		{
+			"type": "Operative Memory",
+			"title": "CRUCIAL CT8G4DFS8266 DDR4 — 8ГБ",
+			"ExtendedPrice": 2550,
+			"Quantity": "49",
+			"CurrencyCode": "RUB",
+			"photo": "images/oper2.png",
+			"busket":"15"
+		},
+		{
+			"type": "Operative Memory",
+			"title": "PATRIOT PSD22G8002S DDR2 — 2ГБ",
+			"ExtendedPrice": 1290,
+			"Quantity": "75",
+			"CurrencyCode": "RUB",
+			"photo": "images/oper3.png",
+			"busket":"16"
+		},
+		{
+			"type": "Operative Memory",
+			"title": "CORSAIR Vengeance LPX  DDR4 — 2x 8ГБ ",
+			"ExtendedPrice": 6410,
+			"Quantity": "2",
+			"CurrencyCode": "RUB",
+			"photo": "images/oper4.png",
+			"busket":"17"
 		},
 		{
 			"type": "SSD",
 			"title": "Samsung Portable SSD T5 1 ТБ",
-			"ExtendedPrice": 5999,
+			"ExtendedPrice": 11999,
 			"Quantity": "19",
 			"CurrencyCode": "RUB",
 			"photo": "images/ssd.png",
-			"busket":"qweqdd"
+			"busket":"18"
+		},
+		{
+			"type": "SSD",
+			"title": "512 ГБ Внешний SSD Smartbuy S3",
+			"ExtendedPrice": 5899,
+			"Quantity": "8",
+			"CurrencyCode": "RUB",
+			"photo": "images/ssd2.png",
+			"busket":"19"
+		},
+		{
+			"type": "SSD",
+			"title": "WD Green WDS240G2G0A 240ГБ ",
+			"ExtendedPrice": 2590,
+			"Quantity": "26",
+			"CurrencyCode": "RUB",
+			"photo": "images/ssd3.png",
+			"busket":"20"
+		},
+		{
+			"type": "SSD",
+			"title": "KINGSTON A400",
+			"ExtendedPrice": 1790,
+			"Quantity": "45",
+			"CurrencyCode": "RUB",
+			"photo": "images/ssd4.png",
+			"busket":"21"
 		},
 		{
 			"type": "HDD",
@@ -134,7 +260,35 @@
 			"Quantity": "25",
 			"CurrencyCode": "RUB",
 			"photo": "images/hdd.png",
-			"busket":"qweqccc"
+			"busket":"22"
+		},
+		{
+			"type": "HDD",
+			"title": "500 ГБ Жесткий диск Seagate BarraCuda",
+			"ExtendedPrice": 2899,
+			"Quantity": "11",
+			"CurrencyCode": "RUB",
+			"photo": "images/hdd2.png",
+			"busket":"23"
+		},
+		{
+			"type": "HDD",
+			"title": "250 ГБ Жесткий диск Seagate BarraCuda",
+			"ExtendedPrice": 1899,
+			"Quantity": "7",
+			"CurrencyCode": "RUB",
+			"photo": "images/hdd3.png",
+			"busket":"24"
+		},
+		{
+			"type": "HDD",
+			"title": "2 ТБ Жесткий диск Toshiba P300",
+			"ExtendedPrice": 4299,
+			"Quantity": "4",
+			"CurrencyCode": "RUB",
+			"photo": "images/hdd4.png",
+			"busket":"25"
 		}
+		
 	]
 }
