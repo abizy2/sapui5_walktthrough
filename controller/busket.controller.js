@@ -12,14 +12,21 @@ sap.ui.define([
 
   return Controller.extend('namespace.controller.busket', {
     onAdd: function(oEvent) {
-	var sBusketRowPath = oEvent.getSource().getBindingContext("main").getPath();// путь массива
+	var sBusketRowPath = oEvent.getSource().getBindingContext("main").getPath();// путь массива event.getsource() 
 	let oModel = oEvent.getSource().getModel('main')
 	var oBusketItem = oModel.getProperty(sBusketRowPath)// строка
 	var Quantity = oBusketItem.Quantity
+	var title = oBusketItem.title
+	var oCatalog = oModel.getProperty("/catalog") // все товары каталога
 	//console.dir(sBusketRowPath);
-	Quantity++;
-	oModel.setProperty(sBusketRowPath+"/Quantity", Quantity)
-    },
+	var aFindEl = oCatalog.find(oBusketItem => oBusketItem.title == title)
+	var QuanityStock = aFindEl.Quantity
+	if (QuanityStock > Quantity) {
+		Quantity++
+	}
+	oModel.setProperty(sBusketRowPath + "/Quantity", Quantity)
+	},
+	
 	
 	
 	
@@ -28,16 +35,15 @@ sap.ui.define([
 		let oModel = oEvent.getSource().getModel('main')
 		var oBusketItem = oModel.getProperty(sBusketRowPath)
 		var Quantity = oBusketItem.Quantity
-		var aBusketData = oModel.getProperty("/busket"); // массив все данных элемента
+		var aBusketData = oModel.getProperty("/busket") // массив все данных элемента
 		//console.dir(sBusketRowPath);
-		Quantity--;
+		Quantity--
 		if (oBusketItem.Quantity > 0) {
 			oModel.setProperty(sBusketRowPath + "/Quantity", Quantity)
 		}
-		aBusketData.filter(function(oBusketItem)) {
-				return oBusketItem.Quantity < 1;
-			}
-			
+			var aFilteredBusket = aBusketData.filter(oBusketItem => oBusketItem.Quantity > 0);
+			oModel.setProperty("/busket", aFilteredBusket)
 		}
+
   });
 });
