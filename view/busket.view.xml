@@ -36,7 +36,7 @@
 					<Text
 						text="{main>title}" />
 					<HBox> 
-						<Button text="-" press="onDelete">
+						<Button text="-" press="onDelete" >
 											</Button> 
 											<Input value= "{main>Quantity}" width="2em">
 											</Input>
@@ -44,15 +44,21 @@
 											</Button> 
 							
 					</HBox>
-						
-					<ObjectNumber
-							number="{main>ExtendedPrice}"
-							unit= "{main>CurrencyCode}"
-							 />
+		<Text text = "{
+					    parts:[
+								'main>ExtendedPrice',
+								'main>Quantity'
+							  ],
+						formatter:'.newformatter'
+							}"
+								/>
 				</cells>
 			</ColumnListItem>
 		</items>
 		</Table>
-	
-					
+		<Text text="{
+					path:'main>/busket',
+				    formatter:'.busketItog'
+			  }"
+								/>
 </mvc:View>
