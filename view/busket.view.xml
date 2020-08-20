@@ -35,7 +35,7 @@
 						icon="{main>photo}"/>
 					<Text
 						text="{main>title}" />
-					<HBox> 
+					<HBox width = "5em">
 						<Button text="-" press="onDelete" >
 											</Button> 
 											<Input value= "{main>Quantity}" width="2em">

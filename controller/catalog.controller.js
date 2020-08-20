@@ -47,7 +47,11 @@ sap.ui.define([
 				oList.getBinding('items').filter(oFilter);
       }, this);
     },
-		
+	
+		onTile: function(oEvent){
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("item");
+		},
 		onPress: function(oEvent) {
 			var cartData = oEvent.getSource().getBindingContext("main").getObject()
 			let oModel = oEvent.getSource().getModel("main")
@@ -83,7 +87,5 @@ sap.ui.define([
 			}
 
 		}
-
-	
   });
 });

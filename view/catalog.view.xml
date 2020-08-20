@@ -11,7 +11,8 @@
 			<GenericTile
 				header="{main>title}"
 				subheader="{main>ExtendedPrice}"
-				headerImage="{main>photo}">
+				headerImage="{main>photo}"
+				press = "onTile">
 					<TileContent footer="{main>Quantity}">
 					<VBox>
 						<Button text="Купить" press="onPress" > </Button> 

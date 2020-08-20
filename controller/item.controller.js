@@ -13,6 +13,7 @@ sap.ui.define([
   return Controller.extend('namespace.controller.item', {
 
     onInit: function onInit () {
+	
     },
   });
 });
