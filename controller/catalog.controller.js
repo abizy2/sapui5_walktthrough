@@ -49,8 +49,13 @@ sap.ui.define([
     },
 	
 		onTile: function(oEvent){
+				var oItem = oEvent.getSource();
+				var oContext = oItem.getBindingContext("main").getObject();
 				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-				oRouter.navTo("item");
+				oRouter.navTo("item",{
+				    category:oContext.type,
+					item:oContext.busket
+				});
 		},
 		onPress: function(oEvent) {
 			var cartData = oEvent.getSource().getBindingContext("main").getObject()

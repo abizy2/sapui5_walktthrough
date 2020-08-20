@@ -13,7 +13,8 @@ sap.ui.define([
   return Controller.extend('namespace.controller.item', {
 
     onInit: function onInit () {
-	
+	 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+	oRouter.getRoute("item").attachPatternMatched(this._onObjectMatched, this);
     },
   });
 });

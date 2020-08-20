@@ -93,7 +93,7 @@
           ]
         },
         {
-          "pattern": "catalog/{item}",
+          "pattern": "catalog/{category}/{item}",
           "name": "item",
           "target": [
             "menu",
@@ -140,7 +140,6 @@
         },
         "item": {
           "viewName": "item",
-		  "viewPath": "namespace.controller.item",
           "controlAggregation": "detailPages",
           "viewLevel": 4
         },
