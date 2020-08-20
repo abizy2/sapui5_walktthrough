@@ -16,5 +16,12 @@ sap.ui.define([
 	 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 	oRouter.getRoute("item").attachPatternMatched(this._onObjectMatched, this);
     },
+	_onObjectMatched: function (oEvent) {
+			this.getView().bindElement({
+				path: "/" + oEvent.getParameter("arguments").category,
+				path: "/" + oEvent.getParameter("arguments").item,
+				model: "main"
+			});
+		}
   });
 });
