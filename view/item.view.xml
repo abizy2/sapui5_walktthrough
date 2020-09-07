@@ -1,37 +1,53 @@
-<mvc:View 
-  controllerName="namespace.controller.item"
-  displayBlock="true"
-  xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
-	<Page 
-			id="itemPage"
-			title= 'Товар'
-			showNavButton="true"
-			navButtonPress=".onNavBack"
-			class="sapUiResponsiveContentPadding">
+<mvc:View
+	controllerName="namespace.controller.item"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	busyIndicatorDelay="0">
+	<Page
+		id="itemPage"
+		title="Товар"
+		showNavButton="true"
+		navButtonText="Back"
+		navButtonPress=".onPressDetailBack"
+		class="sapUiResponsiveContentPadding">
+				<ObjectHeader
+				items="{main>/catalog}"
+				id="oh1"
+				responsive="true"
+				fullScreenOptimized="true"
+				titleActive="true"
+				titlePress="handleTitlePress"
+				showMarkers="true"
+				markFlagged="true"
+				markFavorite="true"
+				numberState="Success"
+				backgroundDesign="Translucent"
+				class="sapUiResponsivePadding--header" >
+				<ObjectAttribute
+					title="ProductID"
+					text="{main>title}"/>
+				<ObjectAttribute
+					title="Manufacturer"
+					text="{main>type}"
+					active="true"/>
+				<ObjectAttribute
+					title="price"
+					text="{main>ExtendedPrice}"/>
+					
+			</ObjectHeader>
+		<!-- <content>
 			<Panel
 				id="itemPanel"
 				width="auto"
-				class="sapUiResponsiveMargin sapUiNoContentPadding"
-				items="{main>/catalog}">
-				<content>
-					<f:SimpleForm
-						minWidth="1024"
-						editable="false"
-						layout="ResponsiveGridLayout"
-						labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
-						columnsL="1" columnsM="1">
-						<f:content>							
-							<Text text="{type}"/>							
-							<Text text="{title}"/>							
-							<Text text="{ExtendedPrice}"/>							
-							<Text text="{Quantity}"/>							
-							<Text text="{photo}"/>
-							<Text text="{busket}"/>
-						</f:content>
-					</f:SimpleForm>
-				</content>
+				class="sapUiResponsiveMargin sapUiNoContentPadding">
+				<GenericTile
+				header="{main>title}"
+				subheader="{main>ExtendedPrice}"
+				headerImage="{main>photo}"
+				press = "onTile">
+			</GenericTile>
 			</Panel>
-		</content>
+		</content> -->
 	</Page>
 </mvc:View>

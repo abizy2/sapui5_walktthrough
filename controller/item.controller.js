@@ -3,11 +3,13 @@
 sap.ui.define([
 	'sap/ui/core/mvc/Controller', 
 	'sap/ui/model/json/JSONModel', 
-	'sap/ui/model/resource/ResourceModel'
+	'sap/ui/model/resource/ResourceModel',
+	"sap/base/Log"
 ], function (
 	Controller, 
 	SONModel, 
-	ResourceModel) {
+	ResourceModel,
+	Log) {
   //"use strict";
 
   return Controller.extend('namespace.controller.item', {
@@ -22,6 +24,10 @@ sap.ui.define([
 				path: "/" + oEvent.getParameter("arguments").item,
 				model: "main"
 			});
-		}
+		},
+		
+/* 		onPressDetailBack: function () {
+			this.itemObj().backDetail();
+		} */
   });
 });
